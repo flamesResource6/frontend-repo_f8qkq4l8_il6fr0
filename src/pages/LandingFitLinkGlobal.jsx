@@ -11,48 +11,40 @@ import {
   Compass,
   Smartphone,
 } from "lucide-react";
+import { BackgroundCircles } from "../components/BackgroundCircles";
 
 export default function FitLinkGlobal() {
   return (
     <div className="min-h-screen bg-black text-white">
-      <section
-        className="relative min-h-[90vh] flex items-center"
-        style={{
-          backgroundImage:
-            "url('https://images.pexels.com/photos/4056532/pexels-photo-4056532.jpeg')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-        aria-label="Hero"
-      >
-        <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/60 to-teal-900/40" />
-        <div className="relative w-full max-w-7xl mx-auto px-6 py-24">
-          <div className="max-w-3xl">
-            <div className="inline-flex items-center gap-2 rounded-full bg-white/10 backdrop-blur-sm px-3 py-1 mb-6">
-              <Globe2 className="h-4 w-4 text-teal-300" />
-              <span className="text-xs tracking-wide text-teal-100">FitLink Global</span>
-            </div>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight">
-              Global Platform for Trainers & Clients
-            </h1>
-            <p className="mt-5 text-lg sm:text-xl text-gray-200 max-w-2xl">
-              Connect, train, and grow—anywhere in the world. A modern
-              marketplace designed to match clients with certified personal
-              trainers across the globe.
-            </p>
-            <div className="mt-8 flex flex-col sm:flex-row gap-3">
-              <a
-                href="#clients"
-                className="inline-flex items-center justify-center rounded-lg bg-teal-500 hover:bg-teal-400 text-black font-medium px-6 py-3 transition shadow-lg shadow-teal-500/20"
-              >
-                Find a Trainer
-              </a>
-              <a
-                href="#trainers"
-                className="inline-flex items-center justify-center rounded-lg bg-white/10 hover:bg-white/20 text-white font-medium px-6 py-3 transition backdrop-blur-sm border border-white/15"
-              >
-                Become a Trainer
-              </a>
+      {/* Animated Hero */}
+      <section className="relative min-h-[90vh] flex items-center">
+        <BackgroundCircles
+          title="Global Platform for Trainers & Clients"
+          description="Connect, train, and grow—anywhere in the world."
+          variant="senary"
+          className="h-[85vh]"
+        />
+        <div className="pointer-events-none absolute inset-0 flex items-center">
+          <div className="relative w-full max-w-7xl mx-auto px-6">
+            <div className="max-w-3xl">
+              <div className="inline-flex items-center gap-2 rounded-full bg-white/10 backdrop-blur-sm px-3 py-1 mb-6">
+                <Globe2 className="h-4 w-4 text-teal-300" />
+                <span className="text-xs tracking-wide text-teal-100">FitLink Global</span>
+              </div>
+              <div className="mt-8 flex flex-col sm:flex-row gap-3 pointer-events-auto">
+                <a
+                  href="#clients"
+                  className="inline-flex items-center justify-center rounded-lg bg-teal-500 hover:bg-teal-400 text-black font-medium px-6 py-3 transition shadow-lg shadow-teal-500/20"
+                >
+                  Find a Trainer
+                </a>
+                <a
+                  href="#trainers"
+                  className="inline-flex items-center justify-center rounded-lg bg-white/10 hover:bg-white/20 text-white font-medium px-6 py-3 transition backdrop-blur-sm border border-white/15"
+                >
+                  Become a Trainer
+                </a>
+              </div>
             </div>
           </div>
         </div>
