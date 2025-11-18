@@ -1,6 +1,6 @@
 import React from 'react'
-import FitLinkGlobal from './LandingFitLinkGlobal'
+import LandingAthlyGlobal from './LandingAthlyGlobal'
 
 export default function Landing() {
-  return <FitLinkGlobal />
+  return <LandingAthlyGlobal />
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route, Navigate, Link } from 'react-router-dom'
+import { Routes, Route, Navigate, Link } from 'react-router-dom'
 import Landing from './pages/Landing'
 import Login from './pages/Login'
 import Register from './pages/Register'
@@ -14,7 +14,7 @@ function Navbar() {
       <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
           <div className="h-7 w-7 rounded-md bg-gradient-to-br from-teal-400 to-teal-600" />
-          <span className="font-semibold text-white">FitLink Global</span>
+          <span className="font-semibold text-white">Athly Global</span>
         </Link>
         <div className="flex items-center gap-3 text-sm">
           <Link to="/login" className="text-gray-200 hover:text-white">Login</Link>
